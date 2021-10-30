@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+.nav {
+  &-brand {
+    color: red !important;
+    font-family: 'Unica One', cursive;
+    font-size: 25px !important;
+  }
+
+  &-link {
+    font-size: 14px;
+  }
+}
+
+#nav-small {
+  display: none;
+}
+
+#sidebar {
+  height: 150vh;
+  width: 260px;
+  position: fixed;
+  z-index: 4;
+}
+
+.sidebar-visible {
+  left: 0px;
+  position: fixed;
+  transition: 0.4s;
+
+}
+
+.sidebar-hidden {
+  left: -265px;
+  position: fixed;
+  transition: 0.4s;
+}
+
+
+
+@media (max-width: 768px) {
+  #nav {
+    display: none;
+  }
+
+  #nav-small {
+    display: contents;
+  }
+}
