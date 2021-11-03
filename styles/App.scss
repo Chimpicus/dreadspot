@@ -1,5 +1,8 @@
 @import './components/Navbar';
+
+@import './pages/scenarios';
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 
 body {
   background-color: rgb(53, 53, 53);
@@ -7,5 +10,10 @@ body {
 
 h1 {
   color: #ffffff8c;
-  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+.page {
+  margin: 25px;
 }

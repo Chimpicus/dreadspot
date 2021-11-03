@@ -45,9 +45,9 @@ const Navbar = () => {
         </div>
       </nav>
       {/* small nav  */}
-      <nav id="nav-small" class="nav navbar navbar-dark px-2">
-        <div class="container-fluid">
-          <a class="nav-brand navbar-brand py-0" href="#">DreadSpot</a>
+      <nav id="nav-small" class="nav navbar navbar-dark px-">
+        <div class="nav container-fluid">
+          <Link href="/"><a class="nav-brand navbar-brand mx-2 px-1 p-0">DreadSpot</a></Link>
           <button class="navbar-toggler ms-auto p-0 px-2 border-0" type="button" onClick={() => { toggleSidebar() }}>
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -55,16 +55,16 @@ const Navbar = () => {
         <div id="sidebar" className={"navbar-dark bg-dark" + " " + sidebarClass}>
           <ul class="navbar-nav  m-0 my-2 px-3">
             <li class="nav-item">
-              <Link href="/scenarios"><a class="nav-link">SCENARIOS</a></Link>
+              <Link href="/scenarios"><a class="nav-link" onClick={() => { toggleSidebar() }}>SCENARIOS</a></Link>
             </li>
             <li class="nav-item">
-              <Link href="/about"><a class="nav-link">ABOUT</a></Link>
+              <Link href="/about"><a class="nav-link" onClick={() => { toggleSidebar() }}>ABOUT</a></Link>
             </li>
             <li class="nav-item">
-              <Link href="#"><a class="nav-link">OPTION</a></Link>
+              <Link href="#"><a class="nav-link" onClick={() => { toggleSidebar() }}>OPTION</a></Link>
             </li>
             <li class="nav-item">
-              <Link href="#"><a class="nav-link">OPTION</a></Link>
+              <Link href="#"><a class="nav-link" onClick={() => { toggleSidebar() }}>OPTION</a></Link>
             </li>
           </ul>
         </div>
